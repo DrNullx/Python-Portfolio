@@ -1,5 +1,7 @@
 # Simple Calculator
 
+# Main functions used
+
 def subtraction(x, y):
     return x - y
 
@@ -24,7 +26,7 @@ print('''\nWhat do you want to do?
 4\tDivide 
 ''')
 
-
+#main while loop
 while True:
     choice = input("Please enter an option: ")
 
@@ -51,11 +53,11 @@ while True:
         elif choice == '4':
             print('You chose to divide', num1, 'and', num2)
             print('The answer is', divide(num1, num2))
-
+        # asks the user if they want to do another calculation
         next_calculation = input(
             "Enter Y or N if you want to do another calculation:")
         next_calculation = next_calculation.upper()
-    
+        # Will stop the program if the user inputs N
         if next_calculation == 'N':
             break
     else:
